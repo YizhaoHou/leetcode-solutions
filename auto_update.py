@@ -8,7 +8,7 @@ sys.path.append('Array')
 
 
 def add_and_commit(Question_name):
-    file_name = os.path.abspath(Question_name)
+    file_name = os.path.abspath(Question_name  + '.py')
     os.system(f"git add {file_name}")
     os.system(f'git commit -m "Add solution for LeetCode problem: {Question_name}"')
 
